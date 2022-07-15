@@ -1,7 +1,8 @@
 import Header from "./components/Header";
-import Posts from "./components/Posts;";
+import Posts from "./components/Posts";
 import Sidebar from "./components/Sidebar";
 import Stories from "./components/Stories";
+import MenuMobile from "./components/MenuMobile";
 
 export default function App() {
   return (
@@ -12,8 +13,10 @@ export default function App() {
         <div class="conteudo">
           <Stories />
           <Posts />
-          <Sidebar />
         </div>
+
+        <Sidebar />
+        <MenuMobile />
       </div>
     </div>
   );
