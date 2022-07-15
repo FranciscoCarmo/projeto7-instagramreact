@@ -1,0 +1,490 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 935px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+header {
+  width: 100%;
+
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #dbdbdb 1px solid;
+  position: fixed;
+  z-index: 5;
+}
+
+.headerContent {
+  width: 935px;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.logoinsta {
+  height: 23px;
+  border-right: solid 1px #dbdbdb;
+  padding-right: 5px;
+  margin: 12px 0;
+
+}
+.headerCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.logoInsta {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search #search {
+  background-color: #fafafa;
+  text-decoration: #979797;
+  border: solid 1px #dbdbdb;
+  border-radius: 3px;
+  display: flex;
+  text-align: center;
+}
+
+.headerRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 12.5%;
+}
+
+.directMobile {
+  display: none;
+}
+
+/* Começo do conteúdo*/
+
+.pagina {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 88px;;
+
+}
+
+.conteudo {
+  width: 614px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Stories */
+
+.stories {
+  width: 100%;
+  height: 118px;
+
+  padding: 0 10px;
+
+  margin-bottom: 24px;
+
+  background-color: #ffffff;
+  border: solid 1px #dbdbdb;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.seta {
+  height: 23px;
+  width: 22px;
+  background-color: white;
+  text-shadow;: -1px 1px 1px 1px ##e8e8e8;
+  border-radius: 50%;
+  z-index: 3;
+  position: absolute;
+  right: 13px;
+  cursor: pointer;
+}
+
+.seta div {
+  font-size: 1.5rem;
+  z-index: 4;
+  position: absolute;
+  right: -1px;
+  bottom: ;
+}
+
+.storieProfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 7px;
+
+  position: relative;
+}
+
+.storieProfile #storiesBackground {
+  height: 66px;
+  width: 66px;
+  border: #979797;
+  border-radius: 50%;
+  margin-bottom: 0.3rem;
+}
+
+.storieProfile #profilePic {
+  height: 56px;
+  width: 56px;
+  border: #979797;
+  border-radius: 50%;
+  position: absolute;
+  margin-bottom: 16px;
+  z-index: 2;
+}
+
+.storieProfile p {
+  font-size: 12px;
+}
+
+/* Posts */
+
+.posts {
+  width: 100%;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-bottom: 60px;
+
+  height: 749px;
+  width: 100%;
+  background-color: #ffffff;
+  border: solid 1px #dbdbdb;
+  border-radius: 5px;
+}
+
+.postHeader {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 3.5%;
+  border-bottom: solid 1px #dbdbdb;
+}
+.profile {
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  border: #979797;
+  border-radius: 50%;
+  margin-right: 1rem;
+  height: 100%;
+  width: 38px;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.photo img {
+  object-fit: ;
+  width: 100%;
+  height: 612px;
+}
+
+.photo video {
+  object-fit: ;
+  width: 100%;
+  height: 612px;
+}
+
+.postBottom {
+  height: 81px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: solid 1px #dbdbdb;
+
+  padding: 1.5% 3%;
+}
+
+.postBottom .postMenu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.postBottom .postMenuLeft {
+  width: 20%;
+  min-width: 85px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.liked {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.liked p {
+  font-size: 14px;
+}
+
+em {
+  font-weight: bold;
+}
+.likedImage img {
+  height: 25px;
+  width: 25px;
+  border: #979797;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 293px;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+        position: -webkit-sticky;
+        top: 88px; 
+
+}
+
+.yourProfile {
+  display: flex;
+  height: 118px;
+  align-items: center;
+  font-size: 14px;
+  margin-top: ;
+  margin-bottom: 9px;
+}
+
+.yourProfile img {
+  height: 56px;
+  width: 56px;
+  border: #979797;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.yourProfile h3 {
+  color: #262626;
+}
+
+.yourProfile p {
+  color: #8e8e8e;
+}
+
+.suggestionsForYou {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.suggestionsForYou h3:first-child {
+  color: #8e8e8e;
+}
+.suggestionList {
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.suggestion > h3 {
+  color: #139ef2;
+}
+
+.suggestionProfiles {
+  display: flex;
+  height: 32px;
+  width: 70%;
+  align-items: center;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.suggestionProfiles p {
+  color: #8e8e8e;
+}
+
+.suggestionProfiles img {
+  height: 32px;
+  width: 32px;
+  border: #979797;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.info {
+  font-size: 11px;
+  color: #c7c7c7;
+
+  margin-top: 25px;
+}
+
+/* display médio */
+
+@media (max-width: 935px) {
+  .sidebar {
+    display: none;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 614px) {
+  .headerContent {
+    justify-content: space-between;
+    width: 100%;
+
+    padding: 0 4%;
+  }
+
+  .headerCenter {
+    justify-content: center;
+  }
+
+  .iconInsta {
+    border-right: none;
+  }
+
+  .direct {
+    display: none;
+  }
+
+  .directMobile {
+    display: initial;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .headerRight {
+    display: none;
+  }
+
+  .pagina {
+    margin-top: 52px;
+  }
+
+  .stories {
+    margin-bottom: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  .seta {
+    display: none;
+  }
+
+  .conteudo {
+    width: 100%;
+  }
+
+  .post {
+    height: auto;
+    margin-bottom: 8%;
+  }
+
+  .photo img {
+    height: auto;
+    max-height: 85vh;
+  }
+
+  .mobileMenu {
+    width: 100%;
+    height: 7%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    display: flex;
+    border-top: #dbdbdb 1px solid;
+    position: fixed;
+    z-index: 5;
+  }
+
+  .conteudo {
+    margin-bottom: 20px;
+  }
+
+  .seta {
+    display: none;
+  }
+  
+  .seta div {
+    display: none;
+
+  }
+}
