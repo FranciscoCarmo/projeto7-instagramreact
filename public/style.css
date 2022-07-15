@@ -2,7 +2,12 @@
   box-sizing: border-box;
 }
 
-body {
+body{
+  background-color: #fafafa;
+}
+
+
+.root {
   font-family: "Roboto", sans-serif;
   width: 935px;
   background-color: #fafafa;
@@ -389,7 +394,7 @@ em {
     display: none;
   }
 
-  body {
+  .root {
     width: 100%;
   }
 
@@ -401,6 +406,9 @@ em {
 }
 
 @media (max-width: 614px) {
+
+ 
+
   .headerContent {
     justify-content: space-between;
     width: 100%;
@@ -447,7 +455,7 @@ em {
   }
 
   .conteudo {
-    width: 100%;
+    width: 100vw;
   }
 
   .post {
