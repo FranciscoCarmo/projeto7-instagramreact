@@ -232,6 +232,8 @@ h3 {
   justify-content: center;
   overflow: hidden;
   border-radius: 0;
+
+  cursor: pointer
 }
 
 .photo img {
@@ -385,6 +387,15 @@ em {
   color: #c7c7c7;
 
   margin-top: 25px;
+}
+
+.coracao{
+  display: flex;
+  cursor: pointer;
+}
+
+.hidden{
+ display:  none;
 }
 
 /* display médio */
